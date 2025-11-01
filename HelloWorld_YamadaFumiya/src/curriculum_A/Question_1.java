@@ -81,7 +81,7 @@ public class Question_1 {
 		
 		/*
 		 * [課題Q5] age という int型の変数 を宣言しその変数に 25 を代入する。
-		 * age変数を使用してコンソールに  年齢: 25歳 という表示する。
+		 *      　　age変数を使用してコンソールに  年齢: 25歳 という表示する。
 		 */
 		// int型の変数 age に初期値 "25" 宣言
 		int age = 25;
@@ -119,6 +119,57 @@ public class Question_1 {
 		System.out.println( "最終スコア:" + score );
 		// 改行を出力
 		System.out.println();
+		
+		/*
+		 * [課題Q8] price という double型の変数 を宣言し、99.99 を代入する。
+		 *         double型の変数 price を int型 に変換し、整数価格: 99 とコンソールに表示する。
+		 */
+		// double型の変数 price に初期値 99.99 を宣言
+		double price = 99.99;
+		// price を double型からint型に変換
+		int rePrice = ( int ) price;
+		// "整数価格:" + rePrice を出力
+		System.out.println( "整数価格:" + rePrice );
+		// 改行を出力
+		System.out.println();
+		
+		/*
+		 * [課題Q9] String 型の変数 numStr に "123" を代入する。
+		 *   　　　 numStr を int 型に変換し、変換後の値: の後ろにnumStr + 10 した結果をコンソールに表示する。
+		 */
+		// String型の変数 numStr に初期値 "123" を宣言
+		String numStr = "123";
+		// numStr を String型からint型に変換
+		int numStr2 = Integer.parseInt( numStr );
+		// "変換後の値" + ( numStr2 + 10 ) を出力
+		System.out.println( "変換後の値:" + ( numStr2  + 10 ) );
+		// 改行を出力
+		System.out.println();
+		
+		/*
+		 * [課題Q10] int 型の変数 num に 50 を代入する。
+		 * 　　　　　 num を String 型に変換し、"得点: 50点" の形で表示する。
+		 */
+		// int型の変数 num に初期値 50 を宣言
+		int num = 50;
+		// num を int型からString型に変換
+		String str = String.valueOf( num );
+		// "得点:" + str + "点" を出力
+		System.out.println( "得点:" + str + "点" );
+		// 改行を出力
+		System.out.println();
+		
+		/*
+		 * [課題Q11] 次の条件を満たすプログラムを条件演算子を使用して作成する。
+		 * 　　　    int 型の変数 a に 10 を代入する。
+		 * 　　　    int 型の変数 b に 20 を代入する。
+		 *　　　     a が b より小さいかどうかを boolean 変数 result に代入する。
+		 *　　　     result の値を表示する。
+		 */
+		
+		
+		
+		
 		
 	}
 
