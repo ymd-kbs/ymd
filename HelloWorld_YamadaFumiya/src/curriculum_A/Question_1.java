@@ -8,23 +8,23 @@ public class Question_1 {
 		 * [課題Q1] 各型の変数を宣言し、初期値を設定する
 		 */
 		// byte型の変数 byteNum を宣言
-		byte byteNum;
+		byte byteNum = 0;
 		// short型の変数 shortNum を宣言
-		short shortNum;
+		short shortNum = 0;
 		// int型の変数 intNum を宣言
-		int intNum;
+		int intNum = 0;
 		// lonng型の変数 longNum を宣言
-		long longNum;
+		long longNum = 0L;
 		// float型の変数 floatNum を宣言
-		float floatNum;
+		float floatNum = 0.0f;
 		// double型の変数 doubleNUm を宣言
-		double doubleNum;
+		double doubleNum = 0.0;
 		// char型の変数 letter を宣言
-		char letter;
+		char letter = '\u0000';
 		// String型の変数 letters を宣言
-		String letters;
+		String letters = null;
 		// boolean型の変数 Boolean を宣言
-		boolean isBoolean;
+		boolean isBoolean = false;
 		
 		/*
 		 * [課題Q2] 1で宣言した各型の変数に指定された値を代入する
@@ -166,10 +166,40 @@ public class Question_1 {
 		 *　　　     a が b より小さいかどうかを boolean 変数 result に代入する。
 		 *　　　     result の値を表示する。
 		 */
+		// int型の変数 a に初期値 10 宣言
+		int a = 10;
+		// int型の変数 b に初期値 20 を宣言
+		int b = 20;
+		// result に a が b より小さいかどうかを代入
+		boolean result = ( a < b );
+		// boolean result = ( a < b ); の結果を出力
+		System.out.println( result );
+		// 改行を出力
+		System.out.println();
 		
+		/*
+		 * [課題Q12] 条件演算子を使う。int 型の変数 x に 15 を代入する。
+		 *  　　　  　x が 10 以上なら "OK"、そうでなければ "NG" を表示する。
+		 */
+		// int型の変数 x に初期値 15 を宣言
+		int x = 15;
+		// 条件演算子を使用して "OK" または "NG" を決定する。
+		String x2 = ( x >= 10 ) ? "OK" : "NG";
+		// 結果を出力する。
+		System.out.println( x2 );
+		// 改行を出力
+		System.out.println();
 		
-		
-		
+		/*
+		 * [課題Q13] String text = "私はJavaが好きです。Javaは楽しい！";
+		 *          という文章の中にある 「Java」 を 「Python」 に置き換えて表示させてください。
+		 */
+		// String型の変数 text に "私はJavaが好きです。Javaは楽しい！"
+		String text = "私はJavaが好きです。Javaは楽しい！";
+		// 
+		String text2 = text.replace ( "Java" , "python" );
+		// 
+		System.out.println( text2 );
 		
 	}
 
