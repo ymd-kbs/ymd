@@ -11,9 +11,9 @@ public class Question_2 {
 		 *     　　 score が 60 以上なら "合格です！" と表示する。
 		 */
 		// int型の変数 score に 75 を代入
-		int score = 75;
+		int score = 60;
 		// score が 60 以上か判定し、 true の場合 "合格です！" を出力
-		if ( score >= 60 ); { System.out.println( "合格です！" );}
+		if ( score >= 60 ) { System.out.println( "合格です！" );}
 		// 改行を出力
 		System.out.println();
 		
@@ -95,12 +95,11 @@ public class Question_2 {
 		 *         value が 偶数 なら "偶数です" と表示する。
 		 *         value が 奇数 なら "奇数です" と表示する。
 		 */
-		// scannerオブジェクトを作成
-		Scanner number2 = new Scanner(System.in);
+
 		// コンソール入力を受け付ける
 		System.out.println( "int型の数値を入力してください: " );
 		// int型の変数 value にコンソールの値を代入
-		int value = number2.nextInt();
+		int value = number.nextInt();
 		// value の値が偶数なら "偶数です" と出力
 		if ( value % 2 == 0 ) { System.out.println( "偶数です" ); }
 		// value の値が奇数なら "奇数です" と出力
@@ -115,12 +114,13 @@ public class Question_2 {
 		 * 　　　　　50 以上なら "可" 
 		 * 　　　　　50 未満なら "不可" を表示する。
 		 */
-		// scannerオブジェクトを作成
-		Scanner number3 = new Scanner(System.in);
+
 		// コンソール入力を受け付ける
 		System.out.println( "0 から 100 の数値を入力してください:" );
 		// int型の変数 score2 にコンソールの値を代入
-		int score2 = number3.nextInt();
+		int score2 = number.nextInt();
+		// 改行コードを消費
+		number.nextLine();
 		// score2 の値が 90 以上なら "優" を出力
 		if ( score2 >= 90 ) { System.out.println( "優" ); }
 		// score2 の値が 70 以上なら "良" を出力
@@ -135,12 +135,10 @@ public class Question_2 {
 		/*
 		 * [課題Q8] コンソール入力が null また空文字（""）ときに「入力が無効です」と表示する処理を作成する
 		 */
-		// scannerオブジェクトを作成
-		Scanner scanner = new Scanner(System.in);
 		// コンソール入力を受け付ける
 		System.out.print( "文字を入力してください:" );
 		// String型の変数 deta にコンソールの文字列を代入
-		String deta = scanner.nextLine();
+		String deta = number.nextLine();
 		// deta が null か 空文字の場合 "入力が無効です" を出力
 		if ( deta == null || deta.isEmpty() ) { System.out.println( "入力が無効です" ); }
 		// それ以外は "入力が有効です:" + deta を出力
@@ -160,12 +158,11 @@ public class Question_2 {
 		 *         7 → "日曜日"
 		 *      　 それ以外値なら "無効な入力です" と表示する。
 		 */
-		// Scanner オブジェクトを作成
-		Scanner number4 = new Scanner (System.in);
+
 		// コンソール入力を受け付ける
 		System.out.println( "1 ~ 7 の数値を入力してください:");
 		// int型の変数 day にコンソールの値を代入
-		int day = number4.nextInt();
+		int day = number.nextInt();
 		// day の値によって曜日を出力する
 		switch ( day ) {
 		// 1 の場合 "月曜日" を出力
@@ -204,12 +201,10 @@ public class Question_2 {
 		 * 　　      9, 10, 11 → "秋"
 		 * 　　　    それ以外値なら "無効な月です" と表示する。
 		 */
-		// Scanner オブジェクトを作成
-		Scanner number5 = new Scanner (System.in);
 		// コンソール入力を受け付ける
 		System.out.println( "1～12 いずれか数値を入力してください:" );
 		// int型の変数 month にコンソールの値を代入
-		int month = number5.nextInt();
+		int month = number.nextInt();
 		// month の値によって季節を出力する
 		switch ( month ) {
 		// 12,1,2 の場合 "冬" を出力
@@ -235,8 +230,8 @@ public class Question_2 {
 		// それ以外の場合 "無効な月です" を出力
 		default : System.out.println( "無効な月です" );
 		}
-		// 改行を出力
-		System.out.println();
+		// number を閉じる
+		number.close();
 		
 
 	}
