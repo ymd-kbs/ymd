@@ -125,8 +125,6 @@ public class Question_4 {
 		}
 		// 結果を出力
 		System.out.println(output);
-		// scanner を閉じる
-		scanner.close();
 		// 改行
 		System.out.println();
 
@@ -216,6 +214,8 @@ public class Question_4 {
 				System.out.println();
 			}
 		}
+		// scanner を閉じる  
+		scanner.close();
 
 	}
 
