@@ -2,7 +2,7 @@ package curriculum_B;
 
 public class Question_5 {
 	// 課題Q1のメソッド定義
-	public static void HelloWorld() {
+	public static void helloWorld() {
 		System.out.println("Hellow,World!");
 	}
 
@@ -34,7 +34,7 @@ public class Question_5 {
 			　　    実行例 Hello, World!                                      
 		 */
 		// "Hello,World!" を出力
-		HelloWorld();
+		helloWorld();
 		// 改行
 		System.out.println();
 
