@@ -1,6 +1,6 @@
 package curriculum.e;
 
-public class main {
+public class Main {
 	public static void main(String[] args) {
 		/*
 		 * [課題①] 基本概念
