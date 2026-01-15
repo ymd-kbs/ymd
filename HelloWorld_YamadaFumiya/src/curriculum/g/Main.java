@@ -4,7 +4,7 @@ public class Main {
 
 	public static void main(String[] args) {
 		/*
-		 * [課題③] カプセル化
+		 * [課題③] カプセル化　
 		 */
 		// Employee オブジェクトを生成
 		Employee emp = new Employee();

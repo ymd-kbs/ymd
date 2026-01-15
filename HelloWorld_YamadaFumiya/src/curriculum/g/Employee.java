@@ -2,7 +2,7 @@ package curriculum.g;
 
 public class Employee {
 
-	// プライベートフィールドの定義
+	// プライベートフィールドの定義　
 	private String employeeId;
 	private String name;
 
