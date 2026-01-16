@@ -66,8 +66,14 @@ public class Question_7 {
 			// エラー処理
 		} catch (IOException e) {
 			System.err.println("エラーが発生しました: " + e.getMessage());
+		} finally {
+			// Scanner を閉じる
+			if (sc != null) {
+				sc.close();
+			}
 		}
 	}
+
 	// アタック処理
 	private static void attack(Character attacker, Character defender, StringBuilder log) {
 		int damage = attacker.getAt();
