@@ -1,0 +1,17 @@
+ステータス
+XX [HP:77 AT:23 SP:2]
+Daemon [HP:85 AT:12 SP:6]
+--- Turn 1 ---
+Daemonの攻撃！ XXに 12 のダメージ！ (残りHP: 65)
+XXの攻撃！ Daemonに 23 のダメージ！ (残りHP: 62)
+--- Turn 2 ---
+Daemonの攻撃！ XXに 12 のダメージ！ (残りHP: 53)
+XXの攻撃！ Daemonに 23 のダメージ！ (残りHP: 39)
+--- Turn 3 ---
+Daemonの攻撃！ XXに 12 のダメージ！ (残りHP: 41)
+XXの攻撃！ Daemonに 23 のダメージ！ (残りHP: 16)
+--- Turn 4 ---
+Daemonの攻撃！ XXに 12 のダメージ！ (残りHP: 29)
+XXの攻撃！ Daemonに 23 のダメージ！ (残りHP: 0)
+
+勝者: XX !!
