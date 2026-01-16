@@ -7,7 +7,8 @@ public abstract class Employee implements Payable {
 
 	public Employee(String name, int hours) {
 		this.name = name;
-		this.hours = hours;
+		// 0制限
+		this.hours = Math.max(0, hours);
 	}
 
 	public String getName() {
