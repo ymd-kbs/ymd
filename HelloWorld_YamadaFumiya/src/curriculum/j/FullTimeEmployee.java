@@ -1,6 +1,10 @@
 package curriculum.j;
 
 public class FullTimeEmployee extends Employee {
+	// 給与の定数
+	private static final int HOURLY_RATE = 1250; // 時給
+	private static final double OVERTIME_RATIO = 1.25; // 残業倍率
+	private static final int REGULAR_HOURS_LIMIT = 8; // 定時時間
 
 	public FullTimeEmployee(String id, String name) {
 		super(id, name);
@@ -8,20 +12,15 @@ public class FullTimeEmployee extends Employee {
 
 	@Override
 	public int costForDay(int hoursWorked) {
-		// 時給1250円
-		int hourlyRate = 1250;
+		// 0制限
+		int hours = Math.max(0, hoursWorked);
 
-		if (hoursWorked <= 8) {
-			return hoursWorked * hourlyRate;
-		} else {
-			// 8時間分
-			int base = 8 * hourlyRate;
-			// 超過分 (1.25倍)
-			int overtimeHours = hoursWorked - 8;
-			int overtimePay = (int) (overtimeHours * hourlyRate * 1.25);
+		// 残業時間の計算
+		int overtime = Math.max(0, hours - REGULAR_HOURS_LIMIT);
+		// 定時内の勤務時間
+		int regularHours = hours - overtime;
 
-			return base + overtimePay;
-		}
+		return (regularHours * HOURLY_RATE) + (int) (overtime * HOURLY_RATE * OVERTIME_RATIO);
 	}
 
 }

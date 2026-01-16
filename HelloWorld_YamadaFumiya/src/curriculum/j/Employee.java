@@ -9,6 +9,8 @@ public abstract class Employee implements Billable {
 		this.name = name;
 	}
 
+	public abstract int costForDay(int hoursWorked);
+
 	@Override
 	public String toString() {
 		return "名前: " + this.name;

@@ -1,6 +1,8 @@
 package curriculum.j;
 
 public class ContractEmployee extends Employee {
+	// 給与の定数
+	private static final int HOURLY_RATE = 1000;
 
 	public ContractEmployee(String id, String name) {
 		super(id, name);
@@ -8,7 +10,9 @@ public class ContractEmployee extends Employee {
 
 	@Override
 	public int costForDay(int hoursWorked) {
-		// 時給1000円（割増なし）
-		return hoursWorked * 1000;
+		// 0制限
+		int hours = Math.max(0, hoursWorked);
+
+		return hours * HOURLY_RATE;
 	}
 }
