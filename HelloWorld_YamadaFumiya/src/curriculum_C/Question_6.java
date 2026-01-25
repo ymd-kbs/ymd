@@ -16,8 +16,8 @@ public class Question_6 {
 				int cHand = cpu.getHand();
 
 				// 手の表示
-				System.out.println("あなたの手: " + player.getHandName(pHand));
-				System.out.println("CPUの手: " + cpu.getHandName(cHand));
+				System.out.println("あなたの手: " + HandUtil.getHandName(pHand));
+				System.out.println("CPUの手: " + HandUtil.getHandName(cHand));
 
 				// 勝敗判定
 				if (pHand == cHand) {

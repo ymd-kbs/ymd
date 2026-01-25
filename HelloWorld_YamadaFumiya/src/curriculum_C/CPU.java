@@ -10,9 +10,4 @@ public class CPU {
 		return rand.nextInt(3);
 	}
 
-	// 手の名前を文字列で返すメソッド
-	public String getHandName(int hand) {
-		String[] names = { "グー", "チョキ", "パー" };
-		return names[hand];
-	}
 }
